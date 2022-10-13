@@ -1,0 +1,33 @@
+.underline-hover::after{
+    content:"";
+    height: 5px;
+    width: 0px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.5s;
+}
+.underline-hover:hover::after{
+    width: 100%;
+}
+.bannerInicial{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+.bannerInicialIzq{
+    max-width: 45%;
+    min-width: 45%;
+    padding-inline: 5rem;
+}
+.bannerInicialImage{
+    height: 20rem;
+    width: auto;
+}
+.slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.slide-in-right{-webkit-animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
