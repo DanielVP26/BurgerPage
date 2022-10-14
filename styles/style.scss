@@ -1,0 +1,45 @@
+.underline-hover::after{
+    content:"";
+    height: 5px;
+    width: 0px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.5s;
+}
+.underline-hover:hover::after{
+    width: 100%;
+}
+.bannerInicial{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+.bannerInicialIzq{
+    max-width: 45%;
+    min-width: 45%;
+    padding-inline: 5rem;
+}
+.card{
+    -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+.moved{
+    transition: all .2s ease-out;
+    &:hover{
+        background-color: rgb(228, 224, 224);
+    }
+}
+@for $card from 1 through 3 {
+    .card#{$card}{
+        animation-delay: $card*.5s;
+    }
+} 
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+.slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.slide-in-right{-webkit-animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
