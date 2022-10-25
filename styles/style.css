@@ -24,35 +24,24 @@
   padding-inline: 5rem;
 }
 
-.card {
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.animTam:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1);
 }
 
+.contenedor {
+  overflow: hidden;
+}
+
+/* .card{
+    -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+}*/
 .moved {
   transition: all 0.2s ease-out;
 }
 .moved:hover {
   background-color: rgb(228, 224, 224);
-}
-
-.card1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.card2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.card3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-.bgCombos {
-  height: 10rem;
 }
 
 @-webkit-keyframes scale-in-center {

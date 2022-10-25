@@ -20,24 +20,23 @@
     min-width: 45%;
     padding-inline: 5rem;
 }
-.card{
+.animTam:hover {transition: all .2s ease-out;
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.contenedor {
+    overflow:hidden;
+}
+/* .card{
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
-}
+}*/
 .moved{
     transition: all .2s ease-out;
     &:hover{
         background-color: rgb(228, 224, 224);
     }
-}
-@for $card from 1 through 3 {
-    .card#{$card}{
-        animation-delay: $card*.5s;
-    }
 } 
-.bgCombos{
-    height: 10rem;
-}
  @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 .slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both
 }
