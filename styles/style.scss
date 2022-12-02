@@ -11,14 +11,6 @@
 }
 .bannerInicial{
     background-color: gray;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 6rem;
-}
-.bannerInicialIzq{
-    max-width: 45%;
-    min-width: 45%;
-    padding-inline: 5rem;
 }
 .animTam:hover {transition: all .2s ease-out;
     -webkit-transform:scale(1.1);
@@ -29,11 +21,6 @@
     &:hover{
         background-color: rgb(228, 224, 224);
     }
-} 
-.promoHam{
-    max-width: 50%;
-    min-width: 50%;
-    padding-inline: 5rem;
 }
  @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 .slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both

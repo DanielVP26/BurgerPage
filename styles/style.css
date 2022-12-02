@@ -13,15 +13,6 @@
 
 .bannerInicial {
   background-color: gray;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 6rem;
-}
-
-.bannerInicialIzq {
-  max-width: 45%;
-  min-width: 45%;
-  padding-inline: 5rem;
 }
 
 .animTam:hover {
@@ -34,12 +25,6 @@
 }
 .moved:hover {
   background-color: rgb(228, 224, 224);
-}
-
-.promoHam {
-  max-width: 50%;
-  min-width: 50%;
-  padding-inline: 5rem;
 }
 
 @-webkit-keyframes scale-in-center {
